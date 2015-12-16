@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remind Me!</title>
+
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
+
+<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-theme/mystyles.min.css" />
+
+<!--Include Personal Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="css/mystyles.css" />
+
+<!-- Include the jQuery library -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- Include Personal JavaScript-->
+	<script type="text/javascript" src="js/myscripts.js"></script>
+</head>
+
+<body>
+<!--Home Page-->
+	<section id="homepage" data-role="page" data-theme="c">
+
+<!--Header-->
+		<div data-role="header">
+			<h1>Remind Me! <br><i>Grocery</i></br></h1>
+		</div>
+
+<!--List Input Here-->
+		<div data-role="ui-content" class="thelist" style="margin:20px; position:relative">
+			<h3><u>The List</u></h3>
+			<ul id="list"></ul>
+		</div>
+
+<!--Home Page Footer Input-->
+		<div data-role="footer" data-position="fixed" id="footer">
+			<form id="tasks-list" style="margin:20px; position:relative">
+				<input id="taskInput" type="text" placeholder="Item to Add" />
+				<input id="add-btn" type="submit" value="Add to List" />
+        	</form>
+		</div>
+	</section>
+</body>
+</html>
