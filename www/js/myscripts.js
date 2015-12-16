@@ -29,15 +29,12 @@ $(document).ready(function() {
 		return false
 	})
 
-	//$(".remove-btn").live('click', function() {
-		/* Act on the event */
+	
+		/* remove */
 	$(document).on('click', ".remove-btn", function(){
 		$(this).parent('li').remove();
 		localStorage.removeItem('groceries-senk0009');
 		
-
-		
-		//localStorage.removeItem('groceries-senk0009');
 	});
 
 });
